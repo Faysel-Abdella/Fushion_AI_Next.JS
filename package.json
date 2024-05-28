@@ -9,16 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@react-three/drei": "^9.105.6",
-    "@react-three/fiber": "^8.16.6",
-    "framer-motion": "^11.2.6",
-    "maath": "^0.10.7",
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",
-    "react-tilt": "^1.0.2",
-    "react-vertical-timeline": "^0.2.0",
-    "three": "^0.164.1"
+    "react-icons": "^5.2.1",
+    "react-scroll": "^1.9.0"
   },
   "devDependencies": {
     "eslint": "^8",
