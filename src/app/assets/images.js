@@ -4,6 +4,7 @@ import heroImage from "./header-real-estate.png";
 import aboutHouse from "./about_home.png";
 import aboutHouse2 from "./about_home_2.png";
 import circuitBoard from "./circuit-board.svg";
+import path from "./path.png";
 
 export default {
   mainLogo,
@@ -12,4 +13,5 @@ export default {
   aboutHouse,
   aboutHouse2,
   circuitBoard,
+  path,
 };

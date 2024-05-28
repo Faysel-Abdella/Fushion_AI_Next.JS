@@ -4,11 +4,16 @@ import { styles } from "@/styles";
 
 const WhyFushion = () => {
   return (
-    <section className="px-36 py-20">
+    <section className="px-36 py-32">
       <h1 className="font-bold lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-2 text-white">
         Why Choose <span className="text-[#915EFF]">Fushion AI</span> ?
       </h1>
-      <article className="mt-10">
+      <article className="mt-10 flex gap-5 ">
+        <div className="flex flex-col justify-center items-center ">
+          <div className="w-5 h-5 rounded-full bg-[#915EFF]" />
+          <div className="w-1 sm:h-80 h-40 violet-gradient" />
+        </div>
+
         <p className="text-[#dfd9ff] font-medium lg:text-[20px] sm:text-[16px] xs:text-[12px] text-[16px] lg:leading-[40px]">
           At Fushion AI, we harness the power of data to transform the real
           estate market. Our advanced AI models provide essential insights,

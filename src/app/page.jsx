@@ -3,6 +3,8 @@ import Hero from "./sections/1_Hero";
 import About from "./sections/2_about";
 import Services from "./sections/3_services";
 import WhyFushion from "./sections/4_whyFushion";
+import Contact from "./sections/5_contact";
+import { StarsCanvas } from "./components/canvas";
 
 const Home = () => {
   return (
@@ -12,6 +14,10 @@ const Home = () => {
       <Services />
       <div className="bg-whybg bg-cover bg-no-repeat bg-center">
         <WhyFushion />
+      </div>
+      <div className="relative z-0 bg-gray-900">
+        <Contact />
+        <StarsCanvas />
       </div>
     </main>
   );

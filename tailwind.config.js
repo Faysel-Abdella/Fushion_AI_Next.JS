@@ -18,8 +18,10 @@ module.exports = {
         poppins: ["Poppins", "sans-serif"],
         Lora: ["Lora", "sans-serif"],
         Lato: ["Lato", "sans-serif"],
+        Montserrat: ["Montserrat", "sans-serif"],
+        Rubik: ["Rubik", "sans-serif"],
       },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };
