@@ -11,8 +11,7 @@ import images from "../assets/images";
 const Hero = () => {
   return (
     <section
-      className="bg-hero bg-no-repeat bg-cover h-[700px] 
-      
+      className="bg-hero bg-no-repeat bg-cover max-md:bg-center h-[700px] 
     "
     >
       <div className="pt-36 pl-20">

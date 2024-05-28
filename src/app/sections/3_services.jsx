@@ -6,8 +6,10 @@ import images from "../assets/images";
 
 const Services = () => {
   return (
-    <section className="bg-services bg-no-repeat bg-cover">
-      <h1>Services We Offer</h1>
+    <section className="bg-services bg-no-repeat bg-cover py-10">
+      <h1 className="text-center text-slate-100 text-5xl font-poppins font-bold mb-6">
+        Services We Offer
+      </h1>
       <div className="flex flex-col gap-5 justify-center items-center">
         <ServiceCard
           title="Insights for Investors and Professionals"

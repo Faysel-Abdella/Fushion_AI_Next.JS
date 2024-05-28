@@ -11,6 +11,7 @@ module.exports = {
       backgroundImage: {
         hero: "url('/images/hero.png')",
         services: "url('/images/circuit-board.svg')",
+        whybg: "url('/images/herobg.png')",
       },
 
       fontFamily: {
