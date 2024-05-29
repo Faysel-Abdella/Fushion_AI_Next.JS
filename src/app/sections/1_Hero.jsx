@@ -11,6 +11,7 @@ import { Fade, Slide } from "react-awesome-reveal";
 const Hero = () => {
   return (
     <section
+      id="home"
       className="bg-hero bg-no-repeat bg-cover max-md:bg-center h-[700px] 
     "
     >

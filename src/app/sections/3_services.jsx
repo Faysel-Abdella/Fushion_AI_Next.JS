@@ -7,7 +7,7 @@ import icons from "../assets/icons";
 
 const Services = () => {
   return (
-    <section className="bg-services bg-no-repeat bg-cover py-10">
+    <section id="services" className="bg-services bg-no-repeat bg-cover py-10">
       <h1 className="text-center text-slate-100 text-5xl font-poppins font-bold mb-6">
         Services We Offer
       </h1>

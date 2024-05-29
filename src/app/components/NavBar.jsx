@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-// import Link from "next/link";
 import { useState } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 
@@ -75,7 +74,7 @@ const NavBar = () => {
             </li>
             <li className="">
               <Link
-                to="services"
+                to="features"
                 smooth={true}
                 duration={500}
                 spy={true}
@@ -89,18 +88,21 @@ const NavBar = () => {
         </div>
 
         <div className="flex items-center gap-6">
-          <button className="bg-[#00c0ff] text-white px-5 py-2  hover:scale-[1.05] transition-all ease-in rounded-full text-lg font-medium relative">
-            <Link
-              to="contact"
-              smooth={true}
-              duration={500}
-              spy={true}
-              className="font-poppins text-white cursor-pointer"
+          <Link
+            to="contact"
+            smooth={true}
+            duration={500}
+            spy={true}
+            className="font-poppins text-white cursor-pointer h-full w-full"
+          >
+            <button
               onClick={() => setNavBar(!navbar)}
+              className="bg-[#00c0ff] text-white px-5 py-2  hover:scale-[1.05] transition-all ease-in rounded-full text-lg font-medium relative"
             >
               Contact Us
-            </Link>
-          </button>
+            </button>
+          </Link>
+
           {navbar ? (
             <AiOutlineClose
               onClick={() => setNavBar(!navbar)}

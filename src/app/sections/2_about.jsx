@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import { Link, animateScroll as scroll } from "react-scroll";
 import Image from "next/image";
 import images from "../assets/images";
 import icons from "../assets/icons";
@@ -51,13 +53,22 @@ const About = () => {
                 <p>Schedule a call</p>
               </div>
             </div>
-            <button
-              className="mt-6 bg-[#915EFF] px-4 py-3  text-lg text-white rounded-lg animate-scale-up-down font-Montserrat font-semibold
+            <Link
+              to="contact"
+              smooth={true}
+              duration={600}
+              spy={true}
+              offset={-70}
+              className="cursor-pointer"
+            >
+              <button
+                className="mt-6 bg-[#915EFF] px-4 py-3  text-lg text-white rounded-lg animate-scale-up-down font-Montserrat font-semibold
               hover:animate-none hover:scale-[1.05] transform ease-in
             "
-            >
-              Contact Now
-            </button>
+              >
+                Contact Now
+              </button>
+            </Link>
           </div>
         </div>
       </article>
