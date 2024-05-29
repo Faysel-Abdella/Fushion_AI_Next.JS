@@ -18,7 +18,7 @@ const Contact = () => {
         variants={slideIn("left", "tween", 0.2, 1)}
         className="flex-[0.75] bg-blue-950  p-8 rounded-2xl"
       >
-        <p className="text-white sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider">
+        <p className=" sm:text-[18px] text-[14px] text-white uppercase tracking-wider">
           Get in touch
         </p>
         <h3 className="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">
