@@ -1,17 +1,32 @@
 "use client";
 import React from "react";
 import ServiceCard from "../components/ServiceCard";
+import { Fade } from "react-awesome-reveal";
 
 import images from "../assets/images";
 import icons from "../assets/icons";
 
 const Services = () => {
   return (
-    <section id="services" className="bg-services bg-no-repeat bg-cover py-10">
-      <h1 className="text-center text-slate-100 text-5xl font-poppins font-bold mb-6">
+    <section id="services" className="max-container   py-20 pt-36">
+      <h1 className="text-center text-slate-100 text-5xl font-poppins font-bold mb-10">
         Services We Offer
       </h1>
-      <div className="flex flex-col gap-5 justify-center items-center">
+
+      <Fade
+        cascade
+        childStyle={{
+          display: "flex",
+          flexDirection: "column",
+          gap: "1.25rem",
+        }}
+        direction="left"
+        triggerOnce
+        damping={0.1}
+        duration={2000}
+        className="flex flex-col gap-5 justify-center items-center"
+        style={{ display: "flex", flexDirection: "column", gap: "1.25rem" }}
+      >
         <ServiceCard
           title="Insights for Investors and Professionals"
           description=" We provide detailed analyses essential for making strategic decisions in real estate investments. This includes market trends, real estate price forecasts, and a thorough evaluation of risks related to the housing market."
@@ -33,7 +48,7 @@ const Services = () => {
           index={1}
           key={1}
         />
-      </div>
+      </Fade>
     </section>
   );
 };

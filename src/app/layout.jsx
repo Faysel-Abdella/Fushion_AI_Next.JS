@@ -12,7 +12,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <NavBar />
+        <section className="bg-gradient-to-r from-slate-200 to-orange-100">
+          <NavBar />
+        </section>
         {children}
       </body>
     </html>

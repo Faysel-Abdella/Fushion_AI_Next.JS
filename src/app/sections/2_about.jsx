@@ -7,13 +7,13 @@ import icons from "../assets/icons";
 
 const About = () => {
   return (
-    <section id="about" className="about-section px-[90px] pt-20">
+    <section id="about" className="max-container  px-[90px] pt-20">
       <h2 className="text-center text-6xl font-bold font-poppins ">About Us</h2>
       <article className="flex justify-between ">
         <div className="w-[700px] ">
           <Image src={images.aboutHouse2} className="w-full  " />
         </div>
-        <div className="w-1/2 pt-36">
+        <div className="w-1/2 pt-28">
           <h2 className="text-2xl font-semibold font-poppins">
             Transform real estate with the power of data
           </h2>

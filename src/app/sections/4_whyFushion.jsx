@@ -4,7 +4,7 @@ import { styles } from "@/styles";
 
 const WhyFushion = () => {
   return (
-    <section id="features" className="px-36 py-32">
+    <section id="features" className="max-container px-36 py-32">
       <h1 className="font-bold lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-2 text-white">
         Why Choose <span className="text-[#915EFF]">Fushion AI</span> ?
       </h1>

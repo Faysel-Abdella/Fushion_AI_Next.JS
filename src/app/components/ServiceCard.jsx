@@ -8,10 +8,10 @@ import { fadeIn, textVariant } from "../utils/motion";
 import Image from "next/image";
 
 const ServiceCard = ({ index, title, icon, description }) => (
-  <Tilt className="xs:w-[10px] w-[70%]  mx-20">
-    <motion.div
-      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className=" w-full black-gradient p-[1px] rounded-[20px] shadow-card   border-t border-t-yellow-400 border-l border-l-yellow-500"
+  <section className="xs:w-[10px] w-[70%]  mx-20">
+    <div
+      // variants={fadeIn("right", "spring", index * 0.5, 0.75)}
+      className=" w-full black-gradient p-[1px] rounded-[20px] shadow-card   border-t border-t-yellow-400 border-l border-l-yellow-500 mt-5"
     >
       <div
         options={{
@@ -40,8 +40,8 @@ const ServiceCard = ({ index, title, icon, description }) => (
           {description}
         </p>
       </div>
-    </motion.div>
-  </Tilt>
+    </div>
+  </section>
 );
 
 export default ServiceCard;

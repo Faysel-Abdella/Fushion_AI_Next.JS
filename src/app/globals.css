@@ -5,7 +5,22 @@
 @tailwind utilities;
 
 @layer utilities {
+  .max-container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .fixed-nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
 }
+
+/* .max-container {
+  max-width: 1440px;
+  margin: 0 auto;
+} */
 
 .navLink::before {
   content: "";

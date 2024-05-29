@@ -9,16 +9,22 @@ import { StarsCanvas } from "./components/canvas";
 const Home = () => {
   return (
     <main>
-      <Hero />
-      <About />
-      <Services />
-      <div className="bg-whybg bg-cover bg-no-repeat bg-center">
+      <section className=" bg-hero bg-no-repeat bg-cover">
+        <Hero />
+      </section>
+      <section className="about-section">
+        <About />
+      </section>
+      <section className="bg-services bg-cover bg-no-repeat bg-center">
+        <Services />
+      </section>
+      <section className="bg-whybg bg-cover bg-no-repeat bg-center">
         <WhyFushion />
-      </div>
-      <div className="relative z-0 bg-gray-900">
+      </section>
+      <section className="relative z-0 bg-gray-900">
         <Contact />
         <StarsCanvas />
-      </div>
+      </section>
     </main>
   );
 };

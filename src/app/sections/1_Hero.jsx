@@ -12,7 +12,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="bg-hero bg-no-repeat bg-cover max-md:bg-center h-[700px] 
+      className="max-container  max-md:bg-center h-[700px] 
     "
     >
       <div className="pt-36 pl-20">

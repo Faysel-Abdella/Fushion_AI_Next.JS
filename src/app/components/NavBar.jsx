@@ -12,8 +12,8 @@ import { AiOutlineClose } from "react-icons/ai";
 const NavBar = () => {
   const [navbar, setNavBar] = useState(false);
   return (
-    <header className="max-container py-2 bg-gradient-to-r from-slate-200 to-orange-100 font-poppins md:fixed-nav z-10 ">
-      <nav className="flex justify-between items-center w-[82%] mx-auto ">
+    <header className="max-container py-2  font-poppins md:fixed-nav z-10 ">
+      <nav className="max-container flex justify-between items-center w-[82%] mx-auto ">
         <div className="z-50">
           <Link
             to="home"
@@ -57,7 +57,7 @@ const NavBar = () => {
                 className="navLink relative font-poppins text-gray-800 text-xl font-semibold cursor-pointer"
                 onClick={() => setNavBar(!navbar)}
               >
-                About
+                About Us
               </Link>
             </li>
             <li className="">
