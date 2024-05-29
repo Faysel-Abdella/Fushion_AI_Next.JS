@@ -58,3 +58,22 @@
     rgba(60, 51, 80, 0) 100%
   );
 }
+
+.contact-now-button {
+  position: relative;
+  font-size: 16px;
+  border-radius: 20px;
+}
+.contact-now-button::before {
+  opacity: 0;
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: #cacdd0;
+  border-radius: 20px;
+  animation: ripple 2s cubic-bezier(0.65, 0, 0.34, 1) infinite;
+  z-index: -1;
+}

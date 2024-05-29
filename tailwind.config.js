@@ -14,6 +14,16 @@ module.exports = {
         whybg: "url('/images/herobg.png')",
       },
 
+      keyframes: {
+        "scale-up-down": {
+          "0%, 100%": { transform: "scale(1)" },
+          "50%": { transform: "scale(1.05)" },
+        },
+      },
+
+      animation: {
+        "scale-up-down": "scale-up-down 2s infinite",
+      },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
         Lora: ["Lora", "sans-serif"],
