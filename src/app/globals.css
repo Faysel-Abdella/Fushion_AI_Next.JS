@@ -17,6 +17,12 @@
   }
 }
 
+.fixed-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
 /* .max-container {
   max-width: 1440px;
   margin: 0 auto;
@@ -25,10 +31,10 @@
 .navLink::before {
   content: "";
   position: absolute;
-  bottom: 1px;
+  bottom: 0px;
   width: 0;
-  height: 2px;
-  background-color: #cc7a00;
+  height: 2.5px;
+  background-color: #d3cabc;
   transition: width 0.3s ease-in-out;
 }
 @media (max-width: 1050px) {
@@ -42,11 +48,34 @@
   left: 0;
 }
 
+.active:not(.logo) {
+  position: relative;
+}
+
+.active:not(.logo)::before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
+  left: 0;
+  height: 3px;
+  background-color: #ecd4ad;
+  transition: width 0.3s ease-in-out;
+}
+
 .about-section {
   background: linear-gradient(
-    44.8deg,
-    rgba(255, 136, 102, 0.67) -53.1%,
-    rgba(255, 221, 136, 0.28) 49%
+    180.3deg,
+    rgb(221, 221, 221) 5.5%,
+    rgb(110, 136, 161) 90.2%
+  );
+}
+
+.services {
+  background: radial-gradient(
+    343px at 46.3% 47.5%,
+    rgb(242, 242, 242) 0%,
+    rgb(241, 241, 241) 72.9%
   );
 }
 

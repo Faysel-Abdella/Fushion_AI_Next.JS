@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <section className="bg-gradient-to-r from-slate-200 to-orange-100">
+        <section className="md:fixed-nav bg-gradient-to-r from-gray-400 to-gray-800">
           <NavBar />
         </section>
         {children}

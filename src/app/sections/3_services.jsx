@@ -8,24 +8,21 @@ import icons from "../assets/icons";
 
 const Services = () => {
   return (
-    <section id="services" className="max-container   py-20 pt-36">
-      <h1 className="text-center text-slate-100 text-5xl font-poppins font-bold mb-10">
+    <section
+      id="services"
+      className="max-container   py-20 pt-32 max-sm:pt-24 "
+    >
+      <h1 className="text-center text-gray-950 text-5xl max-lg:text-4xl  font-poppins font-bold mb-14">
         Services We Offer
       </h1>
 
       <Fade
         cascade
-        childStyle={{
-          display: "flex",
-          flexDirection: "column",
-          gap: "1.25rem",
-        }}
         direction="left"
-        triggerOnce
-        damping={0.1}
+        triggerOnce={true}
+        damping={0.2}
         duration={2000}
         className="flex flex-col gap-5 justify-center items-center"
-        style={{ display: "flex", flexDirection: "column", gap: "1.25rem" }}
       >
         <ServiceCard
           title="Insights for Investors and Professionals"

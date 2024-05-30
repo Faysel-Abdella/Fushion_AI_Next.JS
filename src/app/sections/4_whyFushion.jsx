@@ -4,12 +4,15 @@ import { styles } from "@/styles";
 
 const WhyFushion = () => {
   return (
-    <section id="features" className="max-container px-36 py-32">
-      <h1 className="font-bold lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-2 text-white">
+    <section
+      id="features"
+      className="max-container px-36 max-lg:px-24 max-md:px-14 max-sm:px-8  py-32 max-md:py-28 max-sm:py-16"
+    >
+      <h1 className="font-bold lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] max-md:text-3xl max-md:leading-[70px] max-sm:leading-[40px] lg:leading-[98px] mt-2 text-white">
         Why Choose <span className="text-[#915EFF]">Fushion AI</span> ?
       </h1>
       <article className="mt-10 flex gap-5 ">
-        <div className="flex flex-col justify-center items-center ">
+        <div className="flex max-sm:hidden flex-col justify-center items-center ">
           <div className="w-5 h-5 rounded-full bg-[#915EFF]" />
           <div className="w-1 sm:h-80 h-40 violet-gradient" />
         </div>

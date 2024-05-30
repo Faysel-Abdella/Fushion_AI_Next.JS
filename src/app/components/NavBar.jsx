@@ -12,7 +12,7 @@ import { AiOutlineClose } from "react-icons/ai";
 const NavBar = () => {
   const [navbar, setNavBar] = useState(false);
   return (
-    <header className="max-container py-2  font-poppins md:fixed-nav z-10 ">
+    <header className="max-container py-4  font-poppins xl:fixed-nav z-10 ">
       <nav className="max-container flex justify-between items-center w-[82%] mx-auto ">
         <div className="z-50">
           <Link
@@ -20,31 +20,38 @@ const NavBar = () => {
             smooth={true}
             duration={500}
             spy={true}
-            offset={-70}
-            className="cursor-pointer"
+            className="logo cursor-pointer"
           >
-            <Image
-              src={images.navLogo}
-              alt="logo"
-              className="w-[50px] h-[30px] rounded-3xl scale-[1.7]"
-            />
+            <div className="flex gap-2 items-center ">
+              <h2 className="text-2xl max-md:text-xl font-bold text-white z-10  font-Montserrat">
+                Fushion AI
+              </h2>
+
+              <Image
+                src={images.navLogo}
+                alt="logo"
+                className="w-[55px] h-[35px] max-md:w-[35] max-md:h-[15] rounded-3xl scale-[1.8]"
+              />
+            </div>
           </Link>
         </div>
 
         <div
-          className={`md:static   absolute md:min-h-fit  min-h-[40vh]  left-0 w-full md:w-auto  flex items-center px-5 ${
-            navbar ? "top-[9%]" : "top-[-100%]"
-          } duration-500`}
+          className={`xl:static   absolute xl:min-h-fit  min-h-[10vh]  left-0 w-full xl:w-auto  flex items-center px-5 max-xl:bg-gray-800
+          max-xl:py-16 max-xl:justify-center z-10
+          
+          ${navbar ? "top-[4.3rem]" : "top-[-800%] "} duration-500`}
         >
-          <ul className="flex md:flex-row flex-col md:items-center  md:gap-[4vw] gap-8 pt-3 pb-1">
+          <ul className="flex xl:flex-row flex-col xl:items-center    xl:gap-[4vw] gap-8 pt-3 pb-1">
             <li className="">
               <Link
                 to="home"
                 smooth={true}
                 duration={500}
+                offset={-200}
                 spy={true}
-                offset={-70}
-                className="navLink relative font-poppins text-gray-800 text-xl font-semibold cursor-pointer"
+                activeClass={`active`}
+                className="navLink relative font-poppins text-slate-100 text-[20px] font-semibold cursor-pointer"
               >
                 Home
               </Link>
@@ -52,9 +59,11 @@ const NavBar = () => {
             <li className="">
               <Link
                 to="about"
+                spy={true}
                 smooth={true}
                 duration={500}
-                className="navLink relative font-poppins text-gray-800 text-xl font-semibold cursor-pointer"
+                activeClass={`active`}
+                className="navLink relative font-poppins text-slate-100 text-[20px] font-semibold cursor-pointer"
                 onClick={() => setNavBar(!navbar)}
               >
                 About Us
@@ -66,7 +75,8 @@ const NavBar = () => {
                 smooth={true}
                 duration={500}
                 spy={true}
-                className="navLink relative font-poppins text-gray-800 text-xl font-semibold cursor-pointer"
+                activeClass={`active`}
+                className="navLink relative font-poppins text-slate-100 text-[20px] font-semibold cursor-pointer"
                 onClick={() => setNavBar(!navbar)}
               >
                 Services
@@ -78,17 +88,31 @@ const NavBar = () => {
                 smooth={true}
                 duration={500}
                 spy={true}
-                className="navLink relative font-poppins text-gray-800 text-xl font-semibold cursor-pointer"
+                activeClass={`active`}
+                className="navLink relative font-poppins text-slate-100 text-[20px] font-semibold cursor-pointer"
                 onClick={() => setNavBar(!navbar)}
               >
                 Why Fushion AI ?
+              </Link>
+            </li>
+            <li className="">
+              <Link
+                to="contact"
+                smooth={true}
+                duration={500}
+                spy={true}
+                activeClass={`active`}
+                className="navLink relative font-poppins text-slate-100 text-[20px] font-semibold cursor-pointer"
+                onClick={() => setNavBar(!navbar)}
+              >
+                Contact Us
               </Link>
             </li>
           </ul>
         </div>
 
         <div className="flex items-center gap-6">
-          <Link
+          {/* <Link
             to="contact"
             smooth={true}
             duration={500}
@@ -101,17 +125,17 @@ const NavBar = () => {
             >
               Contact Us
             </button>
-          </Link>
+          </Link> */}
 
           {navbar ? (
             <AiOutlineClose
               onClick={() => setNavBar(!navbar)}
-              className="text-white text-3xl cursor-pointer md:hidden"
+              className="text-white text-3xl cursor-pointer xl:hidden"
             />
           ) : (
             <AiOutlineAlignRight
               onClick={() => setNavBar(!navbar)}
-              className="text-white text-3xl cursor-pointer md:hidden"
+              className="text-white text-3xl cursor-pointer xl:hidden"
             />
           )}
         </div>
