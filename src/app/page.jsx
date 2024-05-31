@@ -5,6 +5,7 @@ import Services from "./sections/3_services";
 import WhyFushion from "./sections/4_whyFushion";
 import Contact from "./sections/5_contact";
 import { StarsCanvas } from "./components/canvas";
+import Footer from "./sections/6_footer";
 
 const Home = () => {
   return (
@@ -30,6 +31,9 @@ const Home = () => {
       <section id="contact" className="relative z-0 bg-gray-900">
         <Contact />
         <StarsCanvas />
+      </section>
+      <section id="footer" className="bg-gray-950">
+        <Footer />
       </section>
     </main>
   );

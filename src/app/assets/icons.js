@@ -4,6 +4,7 @@ import verified from "./verified.svg";
 import document from "./document.svg";
 import handshake from "./handshake.svg";
 import customized from "./customized.svg";
+import phone from "./phone.svg";
 
 export default {
   emailIcon,
@@ -12,4 +13,5 @@ export default {
   document,
   handshake,
   customized,
+  phone,
 };

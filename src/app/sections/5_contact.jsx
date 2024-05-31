@@ -32,7 +32,6 @@ const Contact = () => {
             <input
               type="text"
               name="name"
-              placeholder="What's your good name?"
               className="bg-teal-900 py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
@@ -41,7 +40,6 @@ const Contact = () => {
             <input
               type="email"
               name="email"
-              placeholder="What's your web address?"
               className="bg-teal-900 py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
@@ -50,7 +48,6 @@ const Contact = () => {
             <textarea
               rows={7}
               name="message"
-              placeholder="What you want to say?"
               className="bg-teal-900 py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
