@@ -8,6 +8,14 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <section className="">
+      <div className="chat chat-start font-poppins py-10 ml-4">
+        <div className="chat-bubble bg-blue-500 py-6 text-xl font-medium">
+          At Fushion AI, we are dedicated to providing exceptional support and
+          assistance to our clients. Whether you have a question, need more
+          information about our services, or want to discuss how we can help you
+          transform your real estate investments, our team is here to assist.
+        </div>
+      </div>
       <footer className="footer py-20 p-10 bg-neutral text-neutral-content font-Montserrat">
         <nav>
           <h6 className="footer-title text-slate-50 opacity-100 text-xl">
@@ -36,7 +44,7 @@ const Footer = () => {
           <a className="text-base font-semibold">
             fushionai.business@gmail.com
           </a>
-          <a className="text-base font-semibold">+31 (6) 11082835.y</a>
+          <a className="text-base font-semibold">+31 (6) 11082835</a>
         </nav>
       </footer>
 
